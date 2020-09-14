@@ -51,7 +51,7 @@ RUN buildDeps=" \
     && docker-php-ext-enable pcov \
     && wget -O /usr/local/bin/phive https://phar.io/releases/phive.phar \
     && chmod +x /usr/local/bin/phive \
-    && phive install --global --trust-gpg-keys C00543248C87FB13,D2CCAC42F6295E7D,8AC095C96F5C623D composer-normalize composer-require-checker composer-unused \
+    && phive install --global --trust-gpg-keys C00543248C87FB13,D2CCAC42F6295E7D,F4D32E2C9343B2AE composer-normalize composer-require-checker composer-unused \
     && wget -O /usr/local/bin/robo http://robo.li/robo.phar \
     && chmod +x /usr/local/bin/robo \
     && curl -sLo /usr/local/bin/wait-for-it.sh https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh \
